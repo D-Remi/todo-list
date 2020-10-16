@@ -3,7 +3,7 @@ function showList(){
   fetch('https://todo-liste-de-remi.firebaseio.com/tasks.json')
         .then((resp) => { return resp.json() })
         .then((data) =>{
-          list(data);
+          list(Object.values(data));
         })
         .catch((err) =>{
             console.log(err)
@@ -12,7 +12,6 @@ function showList(){
 const todoForm = document.querySelector('.form');
 const todoInput = document.querySelector('.input');
 const todoItemsList = document.querySelector('.items');
-
 
 todoForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -24,24 +23,15 @@ todoForm.addEventListener('submit', (event) => {
     {method: 'POST' , body: JSON.stringify(data)}
   )
 });
-
 function list(d){
-  console.log(Object.values(d[1]).task)
   let ul = document.getElementById('ul');
-  for(var i; i < 5; i++){
-    html = Object.values(d[i].task)
-    console.log(html);
-    console.log('ok');
+  console.log(d);
+  d.forEach(task => {
     let li = document.createElement('li');
     ul.append(li)
-    li.innerHTML = html
-  }
+    li.innerHTML = task.task
+  });  
 }
-
 window.onload = () => {
     showList();
-    list();
 }
-
-
-
