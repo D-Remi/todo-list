@@ -1,0 +1,56 @@
+/* General */
+
+body{
+  background: linear-gradient(180deg, #7163ec, #cb73ca );
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* Main */
+
+.app{
+  width:50%;
+  margin:0 auto;
+  padding: 2em;
+  margin-top: 5em;
+  min-height:60vh;
+  border-radius: 0.8em;
+  background-color: white;
+  form{
+    background-color:blueviolet;
+    width:40%;
+    padding:0.5em;
+    margin:0 auto;
+    label{
+      color:white;
+      font-size: 1.5em;
+    }
+    input{
+      width:90%;
+      height: 2em;
+      border-radius: 0.8em;
+      border:none;
+    }
+    button{
+      display: inline;
+    }
+  }
+  ul{
+    padding: 0;
+    width: 40%;
+    margin: 0 auto;
+    li{
+      list-style: none;
+      text-align: center;
+      background-color: #7163ec;
+      color: white;
+      font-size:1.5em;
+      text-transform:uppercase;
+      margin: 0.2em 0;
+    }
+  }
+}

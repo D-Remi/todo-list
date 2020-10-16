@@ -1,0 +1,56 @@
+/* General */
+body {
+  background: linear-gradient(180deg, #7163ec, #cb73ca);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* Main */
+.app {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em;
+  margin-top: 5em;
+  min-height: 60vh;
+  border-radius: 0.8em;
+  background-color: white;
+}
+.app form {
+  background-color: blueviolet;
+  width: 40%;
+  padding: 0.5em;
+  margin: 0 auto;
+}
+.app form label {
+  color: white;
+  font-size: 1.5em;
+}
+.app form input {
+  width: 90%;
+  height: 2em;
+  border-radius: 0.8em;
+  border: none;
+}
+.app form button {
+  display: inline;
+}
+.app ul {
+  padding: 0;
+  width: 40%;
+  margin: 0 auto;
+}
+.app ul li {
+  list-style: none;
+  text-align: center;
+  background-color: #7163ec;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 0.2em 0;
+}
+
+/*# sourceMappingURL=app.css.map */
